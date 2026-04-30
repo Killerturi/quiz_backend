@@ -22,7 +22,7 @@ const app = express();
 const allowedOrigins = [
   "http://localhost:5173",
   "http://localhost:5174",
-  "http://192.168.0.105:5173"
+  "https://youthquiz.netlify.app"
 ];
 
 app.use(cors({
