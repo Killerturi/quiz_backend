@@ -2,10 +2,10 @@ const { ObjectId } = require("mongodb");
 const logActivity = require("../utils/activityLogger");
 const ACTIVITY = require("../utils/activityTypes");
 const Section = require("../models/Section");
-const Category = require("../models/category");
-const Subject = require("../models/subject");
-const Set = require("../models/set");
-const Question = require("../models/question");
+const Category = require("../models/Category");
+const Subject = require("../models/Subject");
+const Set = require("../models/Set");
+const Question = require("../models/Question");
 /* =========================================================
    ADD QUESTION (ALL TYPES SUPPORTED + LOG)
    POST /api/admin/questions
