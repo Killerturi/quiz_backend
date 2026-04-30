@@ -1,5 +1,5 @@
 const mongoose = require("mongoose");
-const SetModel = require("../models/set"); // ✅ FIXED NAME
+const SetModel = require("../models/Set"); // ✅ FIXED NAME
 const Attempt = require("../models/Attempt");
 const Question = require("../models/Question"); // ✅ add this
 
