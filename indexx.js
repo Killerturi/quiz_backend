@@ -98,9 +98,12 @@ async function startServer() {
     // access raw mongo if needed
     app.locals.db = mongoose.connection.db;
 
-    app.listen(8081, () => {
-      console.log("🚀 Server running on http://localhost:8081");
+    const PORT = process.env.PORT || 3000;
+    app.listen(PORT, () => {
+      console.log(`🚀 Server running on http://localhost:${PORT}`);
     });
+
+  
 
   } catch (err) {
     console.error("❌ MongoDB connection failed:", err);
